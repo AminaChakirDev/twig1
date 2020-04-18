@@ -1,0 +1,13 @@
+.navbar-light {
+    border-bottom: rgb(250 170 170) 10px solid;
+}
+
+.card {
+    padding: 0;
+    margin: 10px auto 10px auto;
+}
+
+.card-text {
+    text-align: center;
+    font-size: large;
+}

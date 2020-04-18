@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Quête Twig{% endblock %}
+{% block banner %}
+    <img src="/assets/images/banner.png" class="img-fluid" alt="Responsive image">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            {% for destination in destinations %}
+                <div class="card col-11 col-sm-5 col-md-4 mx-md-auto" style="width: 18rem;">
+                    <img src={{ destination.photo }} class="card-img-top" alt="photo de la destination">
+                    <div class="card-body">
+                        <p class="card-text">{{ destination.city }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock %}
+
